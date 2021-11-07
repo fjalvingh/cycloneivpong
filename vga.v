@@ -29,14 +29,17 @@ module vga(hsync,vsync,vga_r,vga_g,vga_b,clk,rst,swa,swb,swc,swd,hsync_dbg,vsync
 	wire onright;					// "" right paddle
 	wire one;
 	
+	reg paused;						// Pause when someone lost
+	wire leftlost, rightlost;
+	
 	configloader flashloader(one);
 	
 	paddle left(lcolor, onleft, x, y, swa, swb, clk, rst);
 	paddle #(.XPOS(500)) right(rcolor, onright, x, y, swc, swd, clk, rst);
-	ballcontroller ball(bcolor, x, y, clk, vsync, rst, paddlehit, ballhit, xdir);
+	ballcontroller ball(bcolor, x, y, clk, vsync, rst, paddlehit, paused, ballhit, xdir, leftlost, rightlost);
 	
-	digit leftd(ldcolor, x, y, 0, rst, clk, rst);
-	digit #(.CXPOS(13)) rightd(rdcolor, x, y, 0, rst, clk, rst);
+	digit leftd(ldcolor, x, y, rightlost, rst, clk, rst);
+	digit #(.CXPOS(13)) rightd(rdcolor, x, y, leftlost, rst, clk, rst);
 
 	
 	assign one = 1;
@@ -80,4 +83,14 @@ module vga(hsync,vsync,vga_r,vga_g,vga_b,clk,rst,swa,swb,swc,swd,hsync_dbg,vsync
 			vga_b <= 0;
 		end
 	end
+	
+//	always@(negedge vsync) begin
+//		if(leftlost || rightlost) begin
+//			paused = 1;
+//		end	
+//			
+//	
+//	end
+	
+	
 endmodule

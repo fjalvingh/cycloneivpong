@@ -23,7 +23,7 @@ MODEL
 */
 MODEL_VERSION "1.0";
 DESIGN "vga";
-DATE "11/07/2021 18:04:37";
+DATE "11/07/2021 18:47:41";
 PROGRAM "Quartus Prime";
 
 
@@ -34,8 +34,8 @@ INPUT altera_reserved_tms;
 INPUT configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_DATA0;
 INPUT clk;
 INPUT rst;
-INPUT swa;
 INPUT swb;
+INPUT swa;
 INPUT swc;
 INPUT swd;
 OUTPUT configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_DCLK;
@@ -64,6 +64,6 @@ pos_altera_reserved_tck__altera_reserved_tdo__delay:		DELAY (POSEDGE) altera_res
 pos_altera_reserved_tck__configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_DCLK__delay:		DELAY (POSEDGE) altera_reserved_tck configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_DCLK ;
 pos_altera_reserved_tck__configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_DCLK__delay:		DELAY (POSEDGE) altera_reserved_tck configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_DCLK ;
 pos_altera_reserved_tck__configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_SCE__delay:		DELAY (POSEDGE) altera_reserved_tck configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_SCE ;
-___7.523__delay:		DELAY  7.523 ;
+___7.513__delay:		DELAY  7.513 ;
 
 ENDMODEL

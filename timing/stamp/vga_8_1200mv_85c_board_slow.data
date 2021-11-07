@@ -33,11 +33,11 @@ TIMINGDATA
 ARCDATA
 pos_altera_reserved_tdi__altera_reserved_tck__setup:
 RISE_CONSTRAINT( scalar ) {
-VALUES ("2.947");
+VALUES ("1.931");
 }
 
 FALL_CONSTRAINT( scalar ) {
-VALUES ("2.947");
+VALUES ("1.931");
 }
 
 ENDARCDATA
@@ -45,11 +45,11 @@ ENDARCDATA
 ARCDATA
 pos_altera_reserved_tms__altera_reserved_tck__setup:
 RISE_CONSTRAINT( scalar ) {
-VALUES ("9.005");
+VALUES ("6.122");
 }
 
 FALL_CONSTRAINT( scalar ) {
-VALUES ("9.005");
+VALUES ("6.122");
 }
 
 ENDARCDATA
@@ -57,11 +57,11 @@ ENDARCDATA
 ARCDATA
 pos_configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_DATA0__altera_reserved_tck__setup:
 RISE_CONSTRAINT( scalar ) {
-VALUES ("0.872");
+VALUES ("1.522");
 }
 
 FALL_CONSTRAINT( scalar ) {
-VALUES ("0.872");
+VALUES ("1.522");
 }
 
 ENDARCDATA
@@ -69,11 +69,11 @@ ENDARCDATA
 ARCDATA
 pos_altera_reserved_tdi__altera_reserved_tck__hold:
 RISE_CONSTRAINT( scalar ) {
-VALUES ("1.755");
+VALUES ("1.397");
 }
 
 FALL_CONSTRAINT( scalar ) {
-VALUES ("1.755");
+VALUES ("1.397");
 }
 
 ENDARCDATA
@@ -81,11 +81,11 @@ ENDARCDATA
 ARCDATA
 pos_altera_reserved_tms__altera_reserved_tck__hold:
 RISE_CONSTRAINT( scalar ) {
-VALUES ("-1.122");
+VALUES ("-0.487");
 }
 
 FALL_CONSTRAINT( scalar ) {
-VALUES ("-1.122");
+VALUES ("-0.487");
 }
 
 ENDARCDATA
@@ -93,11 +93,11 @@ ENDARCDATA
 ARCDATA
 pos_configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_DATA0__altera_reserved_tck__hold:
 RISE_CONSTRAINT( scalar ) {
-VALUES ("-0.341");
+VALUES ("-0.882");
 }
 
 FALL_CONSTRAINT( scalar ) {
-VALUES ("-0.341");
+VALUES ("-0.882");
 }
 
 ENDARCDATA
@@ -105,11 +105,11 @@ ENDARCDATA
 ARCDATA
 pos_altera_reserved_tck__altera_reserved_tdo__delay:
 CELL_RISE( scalar ) {
-VALUES ("12.381");
+VALUES ("12.469");
 }
 
 CELL_FALL( scalar ) {
-VALUES ("12.381");
+VALUES ("12.469");
 }
 
 ENDARCDATA
@@ -117,11 +117,11 @@ ENDARCDATA
 ARCDATA
 pos_altera_reserved_tck__configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_DCLK__delay:
 CELL_RISE( scalar ) {
-VALUES ("5.669");
+VALUES ("5.673");
 }
 
 CELL_FALL( scalar ) {
-VALUES ("5.669");
+VALUES ("5.673");
 }
 
 ENDARCDATA
@@ -129,11 +129,11 @@ ENDARCDATA
 ARCDATA
 pos_altera_reserved_tck__configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_DCLK__delay:
 CELL_RISE( scalar ) {
-VALUES ("5.669");
+VALUES ("5.673");
 }
 
 CELL_FALL( scalar ) {
-VALUES ("5.669");
+VALUES ("5.673");
 }
 
 ENDARCDATA
@@ -141,23 +141,23 @@ ENDARCDATA
 ARCDATA
 pos_altera_reserved_tck__configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_SCE__delay:
 CELL_RISE( scalar ) {
-VALUES ("9.960");
+VALUES ("10.408");
 }
 
 CELL_FALL( scalar ) {
-VALUES ("9.960");
+VALUES ("10.408");
 }
 
 ENDARCDATA
 
 ARCDATA
-___8.040__delay:
+___8.029__delay:
 CELL_RISE( scalar ) {
-VALUES ("7.812");
+VALUES ("7.798");
 }
 
 CELL_FALL( scalar ) {
-VALUES ("7.812");
+VALUES ("7.798");
 }
 
 ENDARCDATA

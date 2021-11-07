@@ -1,0 +1,21 @@
+Info: Using NativeLink to launch synthesis Tool
+Info: Created script file precision_work/precision_compile.tcl -- launching Precision Synthesis synthesis tool
+Error: Can't launch the Precision RTL Synthesis software. Specify the path to the location of the executables for the Precision RTL Synthesis software
+Error: You can specify the path in the EDA Tool Options page of the Options dialog box or using the Tcl command set_user_option.
+Error: Encountered error while running NativeLink synthesis script
+Error: NativeLink flow failed to complete synthesis
+
+================The following information is provided to Debug NativeLink Script=================
+Nativelink TCL script failed with errorCode:  NONE
+Nativelink TCL script failed with errorInfo:  
+    while executing
+"error ""  """
+    invoked from within
+"if [ catch {create_precision_script $output_dir} script_file  ] {
+	    set savedCode $errorCode
+	    set savedInfo $errorInfo
+	    nl_postmsg error "E..."
+    (procedure "launch_precision" line 35)
+    invoked from within
+"launch_precision "
+PATH Environment Variable is set to :  /d1/intelFPGA_lite/20.1/quartus/adm:/d1/intelFPGA_lite/20.1/quartus/linux64:/home/jal/.local/bin:/home/jal/bin:/opt/oracle/12cr2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/java/11/bin:/opt/java/11/jre/bin

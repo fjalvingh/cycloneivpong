@@ -1,0 +1,167 @@
+/*
+ Copyright (C) 2020  Intel Corporation. All rights reserved.
+ Your use of Intel Corporation's design tools, logic functions 
+ and other software and tools, and any partner logic 
+ functions, and any output files from any of the foregoing 
+ (including device programming or simulation files), and any 
+ associated documentation or information are expressly subject 
+ to the terms and conditions of the Intel Program License 
+ Subscription Agreement, the Intel Quartus Prime License Agreement,
+ the Intel FPGA IP License Agreement, or other applicable license
+ agreement, including, without limitation, that your use is for
+ the sole purpose of programming logic devices manufactured by
+ Intel and sold by Intel or its authorized distributors.  Please
+ refer to the applicable agreement for further details, at
+ https://fpgasoftware.intel.com/eula.
+*/
+MODELDATA
+/*MODELDATA HEADER*/
+/*
+ This file contains Slow Corner delays for the design using part EP4CE6E22C8
+ with speed grade 8, core voltage 1.2V, and temperature 0 Celsius
+
+*/
+DESIGN "vga";
+TIMESCALE "1ns";
+
+
+
+
+
+TIMINGDATA
+
+ARCDATA
+pos_altera_reserved_tdi__altera_reserved_tck__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("2.967");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("2.967");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_altera_reserved_tms__altera_reserved_tck__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("8.878");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("8.878");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_DATA0__altera_reserved_tck__setup:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("0.771");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("0.771");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_altera_reserved_tdi__altera_reserved_tck__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("1.486");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("1.486");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_altera_reserved_tms__altera_reserved_tck__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-1.260");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-1.260");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_DATA0__altera_reserved_tck__hold:
+RISE_CONSTRAINT( scalar ) {
+VALUES ("-0.292");
+}
+
+FALL_CONSTRAINT( scalar ) {
+VALUES ("-0.292");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_altera_reserved_tck__altera_reserved_tdo__delay:
+CELL_RISE( scalar ) {
+VALUES ("11.638");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("11.638");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_altera_reserved_tck__configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_DCLK__delay:
+CELL_RISE( scalar ) {
+VALUES ("5.110");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("5.110");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_altera_reserved_tck__configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_DCLK__delay:
+CELL_RISE( scalar ) {
+VALUES ("5.110");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("5.110");
+}
+
+ENDARCDATA
+
+ARCDATA
+pos_altera_reserved_tck__configloader:flashloader|altera_serial_flash_loader:serial_flash_loader_0|altserial_flash_loader:altserial_flash_loader_component|\GEN_ASMI_TYPE_1:asmi_inst~ALTERA_SCE__delay:
+CELL_RISE( scalar ) {
+VALUES ("9.268");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("9.268");
+}
+
+ENDARCDATA
+
+ARCDATA
+___7.523__delay:
+CELL_RISE( scalar ) {
+VALUES ("7.248");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("7.248");
+}
+
+ENDARCDATA
+
+ENDTIMINGDATA
+
+ENDMODELDATA
